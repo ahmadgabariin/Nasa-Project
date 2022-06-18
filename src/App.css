@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-left: 2vw;
+  height: 5vh;
+  column-gap: calc(1vw + 20px);
+  background-color: black;
+}
+
+.story-of-the-day {
+  display: grid;
+  justify-items: center;
+  width: 80%;
+  row-gap: 5vh;
+  background-color: #1F1F1F;
+  padding: 5vw;
+  color: white;
+  margin-bottom: 5vh;
+}
+
+.home-container {
+  display: grid;
+  justify-items: center;
+  margin-top: 3vh;
+}
+.img-of-the-day , .img-post {
+  width: 100%;
+  height: 50vh;
+}
+
+.video-of-the-day {
+  width: 42%;
+  height: 34.5%;
+}
+
+.search-container {
+  margin-top: 4vh;
+}
+
+.body-grid {
+  display: grid;
+  justify-items: center;
+  margin-top: 5vh;
+  row-gap: 8vh;
+}
+.post {
+  display: grid;
+  width: 80%;
+  justify-items: center;
+  row-gap: 2vh;
+  background-color: #1F1F1F;
+  padding: 5vw;
+}
+
+.btn-like , .btn-back{
+  display: flex;
+  width: 10vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0.6vh;
+  border: none;
+  background-color: white;
+}
+
+.favourites-title {
+  padding-left: 4vw;
+  display: inline-block;
+  margin-top: 4vh;
+  font-size: xx-large;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img-title {
+  display: grid ;
+  justify-items: center;
+  row-gap: 2vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none; 
+  color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.search-input {
+  border: none;
+  color: black;
+  border-bottom: 1px black solid;
+  padding-left: 1vw;
+  margin-left: 6vw;
+  padding: 0.5vw;
+}
+.search-input:focus {
+  outline: none;
+}
+
+.btn-search {
+  border: none;
+  font-size: medium;
+  background-color: #616161;
+}
+
+body {
+  background-color: #616161;
+}
+
+.btns-like-back {
+  display: grid;
+  row-gap: 2vh;
+  padding-bottom: 10vh;
 }
